@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+}
+
+
+.light{
+    background: rgb(198, 23, 23);
+}
+
+html{
+    background: rgb(36, 0, 240);
+}
