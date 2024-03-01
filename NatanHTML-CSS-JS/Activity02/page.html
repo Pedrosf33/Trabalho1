@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrap-menu">
+        <ul>
+           <li><a class="ancora" href="#perfil01">Primeiro perfil</a></li>
+           <li><a class="ancora" href="#perfil02">Segundo perfil</a></li>
+            <li><a class="ancora" href="#tec">Tecnologias</a></li>
+           <li><a class="ancora" href="#contact">Contato</a></li>
+        </ul>
+    </div>
+    <div class="perfil01" id="perfil01">
+      <div >
+        <h1  class="escritas">Leonardo Carlos M. K. <br/> <br/> <br/>  Leonardo é aluno do colégio sesi centro, que faz parte do curso de desenvolvimento de sistemas, seu sonho é seguir carreira na área e trabalhar principalmente com a parte de programação.
+        </h1>
+      </div>
+    
+        <div>
+            <img class="img1" src="https://avatars.githubusercontent.com/u/158284007?v=4" alt="rei do futebol:">
+        </div>
+    </div>
+    <div class="perfil02" id="perfil02">
+        <div >
+          <h1  class="escritas">Natan B. Almeida <br/> <br/> <br/>  Natan é um aluno de desenvolvimento de sistemas do colegio sesi centro, um aluno muito dedicado, e sonha em seguir carreira com a programação.
+          </h1>
+        </div>
+      
+          <div>
+              <img class="img1" src="https://avatars.githubusercontent.com/u/86568683?v=4" alt="rei do futebol:">
+          </div>
+    </div>
+    <div class="tecDiv" id="tec">
+        <div class="filhas">
+            <h2>HTML</h2>
+            <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de páginas web, fornecendo uma base semântica para o desenvolvimento web.</p>
+
+        </div>
+        
+        <div class="filhas">
+            <h2>CSS</h2>
+            <p>CSS é uma linguagem de estilo usada para controlar a aparência e o layout das páginas HTML, permitindo a separação entre conteúdo e apresentação.</p>
+
+        </div>
+       
+        <div class="filhas">
+            <h2>Javascript</h2>
+            <p>JavaScript é uma linguagem de programação usada para adicionar interatividade e funcionalidades dinâmicas às páginas web, possibilitando a manipulação do conteúdo e a resposta a eventos do usuário.</p>
+
+        </div>
+    </div>
+    
+    <div class="contactDiv" id="contact">
+        <div class="leftContact">
+            <div style="line-height: 35px;">
+                <h2>Contato</h2>
+                <p>Aqui você pode me mandar uma mensagem.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <label for="nome">Nome:</label>
+                <input class="inputs1" type="text" id="nome">
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <label for="mensagem">Mensagem:</label>
+                <textarea class="inputs2" type="text" id="mensagem"></textarea>
+            </div>
+            <button class="botao" onclick="conferirMensagemWhatsApp()">Conferir dados</button>
+        </div>
+        <div class="rightContact">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+            </div>
+            <button class="botao" onclick="enviar()">Whatsapp</button>
+        </div>
+    </div>
+
+</body>
+</html>
